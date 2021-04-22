@@ -5,7 +5,7 @@ public class Course {
 
     private int year;
     private boolean moduleCode;
-    private int imageId
+    private int imageId;
 
     public Course(int year, boolean moduleCode, int imageId) {
         this.year = year;

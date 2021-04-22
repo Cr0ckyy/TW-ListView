@@ -30,7 +30,7 @@ public class SecondActivity extends AppCompatActivity {
         tvYear.setText(year);
 
 
-        lv = (ListView) this.findViewById(R.id.lv);
+        lv = (ListView) this.findViewById(R.id.tvModule);
 
         // Create a few food objects in Food array
         course = new ArrayList<Course>();

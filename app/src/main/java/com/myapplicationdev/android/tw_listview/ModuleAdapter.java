@@ -51,31 +51,31 @@ import java.util.ArrayList;
             tvCourse.setText(currentCourse.getModuleCode());
             // Set the image to star or nostar accordingly
             if (currentCourse.getImageId() == 1) {
-                ivIcon.setImageResource(R.drawable.);
+                ivIcon.setImageResource(R.drawable.img1);
             }
             else if (currentCourse.getImageId() == 2) {
-                ivIcon.setImageResource(R.drawable.nostar);
+                ivIcon.setImageResource(R.drawable.img2);
             }
             else if (currentCourse.getImageId() == 3) {
-                ivIcon.setImageResource(R.drawable.nostar);
+                ivIcon.setImageResource(R.drawable.img3);
             }
             else if (currentCourse.getImageId() == 4) {
-                ivIcon.setImageResource(R.drawable.nostar);
+                ivIcon.setImageResource(R.drawable.img4);
             }
             else if (currentCourse.getImageId() == 5) {
-                ivIcon.setImageResource(R.drawable.nostar);
+                ivIcon.setImageResource(R.drawable.img5);
             }
             else if (currentCourse.getImageId() == 6) {
-                ivIcon.setImageResource(R.drawable.nostar);
+                ivIcon.setImageResource(R.drawable.img6);
             }
             else if (currentCourse.getImageId() == 7) {
-                ivIcon.setImageResource(R.drawable.nostar);
+                ivIcon.setImageResource(R.drawable.img7);
             }
             else if (currentCourse.getImageId() == 8) {
-                ivIcon.setImageResource(R.drawable.nostar);
+                ivIcon.setImageResource(R.drawable.img8);
             }
             else {
-                ivIcon.setImageResource(R.drawable.nostar);
+                ivIcon.setImageResource(R.drawable.img9);
             }
             // Return the nicely done up View to the ListView
             return rowView;

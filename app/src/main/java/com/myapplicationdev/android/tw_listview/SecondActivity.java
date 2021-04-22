@@ -37,12 +37,12 @@ public class SecondActivity extends AppCompatActivity {
         course.add(new Course("Year 1", "C111", 1));
         course.add(new Course("Year 1", "C222", 2));
         course.add(new Course("Year 1", "C333", 3));
-        course.add(new Course("Year 1", "C444", 1));
-        course.add(new Course("Year 1", "C555", 2));
-        course.add(new Course("Year 1", "C666", 3));
-        course.add(new Course("Year 1", "C777", 1));
-        course.add(new Course("Year 1", "C888", 2));
-        course.add(new Course("Year 1", "C999", 3));
+        course.add(new Course("Year 1", "C444", 4));
+        course.add(new Course("Year 1", "C555", 5));
+        course.add(new Course("Year 1", "C666", 6));
+        course.add(new Course("Year 1", "C777", 7));
+        course.add(new Course("Year 1", "C888", 8));
+        course.add(new Course("Year 1", "C999", 9));
 
         // Link this Activity object, the row.xml layout for
         //  each row and the food String array together

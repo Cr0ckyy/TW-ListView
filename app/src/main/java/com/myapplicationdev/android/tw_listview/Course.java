@@ -4,11 +4,13 @@ package com.myapplicationdev.android.tw_listview;
 public class Course {
 
     private int year;
-    private boolean moduleName;
+    private boolean moduleCode;
+    private int imageId
 
-    public Course(int year, boolean moduleName) {
+    public Course(int year, boolean moduleCode, int imageId) {
         this.year = year;
-        this.moduleName = moduleName;
+        this.moduleCode = moduleCode;
+        this.imageId = imageId;
     }
 
     public int getYear() {
@@ -19,11 +21,19 @@ public class Course {
         this.year = year;
     }
 
-    public boolean isModuleName() {
-        return moduleName;
+    public boolean isModuleCode() {
+        return moduleCode;
     }
 
-    public void setModuleName(boolean moduleName) {
-        this.moduleName = moduleName;
+    public void setModuleCode(boolean moduleCode) {
+        this.moduleCode = moduleCode;
+    }
+
+    public int getImageId() {
+        return imageId;
+    }
+
+    public void setImageId(int imageId) {
+        this.imageId = imageId;
     }
 }

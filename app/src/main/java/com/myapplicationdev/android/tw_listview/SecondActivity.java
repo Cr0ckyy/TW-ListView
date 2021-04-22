@@ -11,7 +11,7 @@ public class SecondActivity extends AppCompatActivity {
     ListView lv;
     TextView tvYear;
 
-
+// Shufang - test
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +25,7 @@ public class SecondActivity extends AppCompatActivity {
         tvYear.setText(year);
 
 
-
     }
-
 
 
 }

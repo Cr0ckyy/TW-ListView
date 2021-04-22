@@ -10,7 +10,7 @@ public class SecondActivity extends AppCompatActivity {
 
     ListView lv;
     TextView tvYear;
-
+// Myron - test
 // Shufang - test
     @Override
     protected void onCreate(Bundle savedInstanceState) {

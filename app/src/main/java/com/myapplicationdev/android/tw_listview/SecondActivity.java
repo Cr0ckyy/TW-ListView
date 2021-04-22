@@ -11,7 +11,7 @@ public class SecondActivity extends AppCompatActivity {
     ListView lv;
     TextView tvYear;
 
-    //test
+    //test Myron
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

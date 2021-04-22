@@ -13,44 +13,26 @@ public class SecondActivity extends AppCompatActivity {
 
     ListView lv;
     TextView tvYear;
-    ArrayAdapter aa;
-    ArrayList<Course> course;
-
+    ArrayList<Module> al;
+    ModuleAdapter aa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        //lv = (ListView) this.findViewById(R.id.lvModules);
-        tvYear = (TextView) findViewById(R.id.tvYear);
+        ListView lv = this.findViewById(R.id.lvModule);
+        TextView tvYear = findViewById(R.id.tvYear);
 
-        Intent i = getIntent();
-        String year = i.getStringExtra("year");
-        tvYear.setText(year);
+        Intent intent = getIntent();
+        String message = intent.getStringExtra("year");
+        tvYear.setText(message);
 
-
-        lv = (ListView) this.findViewById(R.id.);
-
-        // Create a few food objects in Food array
-        course = new ArrayList<Course>();
-        course.add(new Course("Year 1", "C111", 1));
-        course.add(new Course("Year 1", "C222", 2));
-        course.add(new Course("Year 1", "C333", 3));
-        course.add(new Course("Year 2", "C444", 4));
-        course.add(new Course("Year 2", "C555", 5));
-        course.add(new Course("Year 2", "C666", 6));
-        course.add(new Course("Year 3", "C777", 7));
-        course.add(new Course("Year 3", "C888", 8));
-        course.add(new Course("Year 3", "C999", 9));
-
-        // Link this Activity object, the row.xml layout for
-        //  each row and the food String array together
-        aa = new ModuleAdapter(this, R.layout.module_row, course);
+        al = new ArrayList<Module>();
+        al.add(new Module("C208", true));
+        al.add(new Module("C200", false));
+        al.add(new Module("C346", true));
+        aa = new ModuleAdapter(this, R.layout.module_row, al);
         lv.setAdapter(aa);
-
-
     }
-
-
 }
